@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6B5F7AA-DA44-4822-9D06-7252F2C97D93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLDSV</RootNamespace>
+    <AssemblyName>QLDSV</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongke.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongke.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHocPhan.designer.cs">
+      <DependentUpon>frmHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemDiem.Designer.cs">
+      <DependentUpon>frmXemDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_about.designer.cs">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_diem.designer.cs">
+      <DependentUpon>frm_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DoiMatKhau.Designer.cs">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_khoa.designer.cs">
+      <DependentUpon>frm_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lop.designer.cs">
+      <DependentUpon>frm_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sinhvien.designer.cs">
+      <DependentUpon>frm_sinhvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_timKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_timKiem.designer.cs">
+      <DependentUpon>frm_timKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_trangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_trangChu.designer.cs">
+      <DependentUpon>frm_trangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDSVDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDSVDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportQLDiemSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportQLDiemSV.Designer.cs">
+      <DependentUpon>ReportQLDiemSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportXemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportXemDiem.Designer.cs">
+      <DependentUpon>ReportXemDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongKe_DauRot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongKe_DauRot.Designer.cs">
+      <DependentUpon>thongKe_DauRot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemDiemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XemDiemDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHocPhan.resx">
+      <DependentUpon>frmHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_about.resx">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_diem.resx">
+      <DependentUpon>frm_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_khoa.resx">
+      <DependentUpon>frm_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lop.resx">
+      <DependentUpon>frm_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sinhvien.resx">
+      <DependentUpon>frm_sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_trangChu.resx">
+      <DependentUpon>frm_trangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongKe_DauRot.rdlc" />
+    <EmbeddedResource Include="ReportXemDiem.rdlc" />
+    <EmbeddedResource Include="ReportQLDiemSV.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportQLDiemSV.resx">
+      <DependentUpon>ReportQLDiemSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportXemDiem.resx">
+      <DependentUpon>ReportXemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongKe_DauRot.resx">
+      <DependentUpon>thongKe_DauRot.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmXemDiem.resx">
+      <DependentUpon>frmXemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DoiMatKhau.resx">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_timKiem.resx">
+      <DependentUpon>frm_timKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongke.xsc">
+      <DependentUpon>DataSetThongke.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongke.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongke.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongke.xss">
+      <DependentUpon>DataSetThongke.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="XemDiemDataSet.xsc">
+      <DependentUpon>XemDiemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="XemDiemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>XemDiemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XemDiemDataSet.xss">
+      <DependentUpon>XemDiemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLDSVDataSet1.xsc">
+      <DependentUpon>QLDSVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLDSVDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDSVDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDSVDataSet1.xss">
+      <DependentUpon>QLDSVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\LG_hcmup" />
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Huy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Huy_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\clean.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\favicon.ico" />
+    <Content Include="Resources\icon.ico" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\search.png" />
+    <Content Include="Resources\ShortCut.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
